@@ -1,6 +1,7 @@
-//INITIALIZE FIREBASE
+$(document).ready(function(){
 
 // Initialize Firebase
+
 var config = {
     apiKey: "AIzaSyCdV_Llgl0vzDLJuBzETIJK6-GUuMq5p88",
     authDomain: "train-time-homework.firebaseapp.com",
@@ -59,4 +60,4 @@ $('#submitTrain').on("click".function({
         $("#firstTrainTime").html(snapshot.val().frequency);
         $("#frequency").html(snapshot.val().frequency);
     })
-}
+});
